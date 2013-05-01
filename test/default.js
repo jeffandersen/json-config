@@ -10,8 +10,9 @@ describe('json-config autoload', function() {
   });
   it('should return env local when no env var is passed', function() {
 
+    console.log(process.cwd());
     config = require('../index')({
-      config_dir: __dirname + '/config/'
+      config_dir: process.cwd() + '/test/config/'
     });
 
     assert.deepEqual(config, {
@@ -23,7 +24,7 @@ describe('json-config autoload', function() {
     process.env.NODE_ENV = 'production';
 
     config = require('../index')({
-      config_dir: __dirname + '/config/'
+      config_dir: process.cwd() + '/test/config/'
     });
 
     assert.deepEqual(config, {
@@ -34,7 +35,7 @@ describe('json-config autoload', function() {
 
     try {
       config = require('../index')({
-        config_dir: __dirname + '/config/',
+        config_dir: process.cwd() + '/test/config/',
         default_env: 'invalid'
       });
     } catch(e) {
