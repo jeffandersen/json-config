@@ -4,7 +4,7 @@ var config =  {
   load: function(opts) {
     if (!opts) opts = {};
 
-    var CONFIG_DIR = process.env.CONFIG_DIR || opts.config_dir || process.cwd() + '/../config/';
+    var CONFIG_DIR = process.env.CONFIG_DIR || opts.config_dir || process.cwd() + '/config/';
     var CONFIG_ENV = process.env.NODE_ENV || opts.default_env || 'local';
     var CONFIG_PATH = CONFIG_DIR + CONFIG_ENV + '.json';
 
