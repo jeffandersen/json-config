@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "Auto load JSON config files",
   "main": "./index.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/jeffandersen/json-config.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jeffandersen/json-config.git"
   },
   "author": "Jeff Andersen <jeffandersen@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "mocha": "~1.9.0"
   }
 }
