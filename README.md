@@ -19,3 +19,13 @@ var config = require('json-config')({
 });
 // Will require: /path/to/config/development.json
 ```
+
+## Installation
+
+```
+$ npm install json-config
+```
+
+===================================
+
+[![Build Status](https://travis-ci.org/jeffandersen/json-config.png?branch=master)](https://travis-ci.org/jeffandersen/json-config)
