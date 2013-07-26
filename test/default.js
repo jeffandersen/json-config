@@ -10,7 +10,6 @@ describe('json-config autoload', function() {
   });
   it('should return env local when no env var is passed', function() {
 
-    console.log(process.cwd());
     config = require('../index')({
       config_dir: process.cwd() + '/test/config/'
     });
